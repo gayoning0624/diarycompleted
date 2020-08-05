@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css';
+
+.wrap{
+  margin: 5em;
+  border: thin rgb(255,105,180) dashed;
+  border-radius: 20px;
+  padding: 1em;
+  background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body{
+    font-family: 'Coming Soon', cursive;
+    min-height: 100vh;
+    background-color: ivory;
+}
+h1{
+    color: rgb(255,105,180);
+    text-align: center;
+}
+.diary{
+	display: flex;
+	flex-wrap: wrap;
+}
+.mydiary{
+    min-height: 27em;
+	min-width: 19em;
+    background:url(background.png);
+    background-size: cover;
+    border: none;
+         
+	margin:1em;
+	background-color: #fff;
+	position: relative;
+}
+textarea{
+    resize: none;
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 1.5em;
+    background: transparent;
+    font-family: 'Coming Soon', cursive;
+    font-weight: bolder;
+ 
+}
+textarea:focus{
+    outline: none;
+    font-family: 'Coming Soon', cursive;
+}
+textarea::placeholder{
+    color: rgb(255,105,180);
+    font-weight: bolder;
+    font-family: 'Coming Soon', cursive;
+    font-size: 1.5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+    width: 50%;
+    border-radius: 20px;
+    background-color: mediumaquamarine;
+    padding: 1em;
+    border: none;
+    margin:auto;
+    box-sizing: border-box;
+    color: yellow;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 1em;
+    left: 5em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:focus{
+    outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+input{
+    padding: 1em;
+    border: none;
+    background: transparent;
+    border-radius: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Coming Soon', cursive;
+    font-size: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:focus{
+    outline: none;
 }
+input::placeholder{
+    font-family: 'Coming Soon', cursive;
+}
+
+
+.diary-body{
+    width: 100%;
+    position: absolute;
+    height: 80%;
+	top:3em;
+	left:0;
+	padding:1em;
+    box-sizing: border-box;
+
+}
+.diary-remove{
+	color: rgb(255,105,180);
+	font-size: 1em;
+	position: absolute;
+	top:1.1em;
+	right:1.5em;
+}
+
+.form-control:focus{
+	border-color:rgb(255,105,180);
+	box-shadow: none;
+}
+
+.new-diary{
+    background:url(background.png);
+    background-size: cover;
+    border: none;
+         
+
+}
+
+.diary-content{
+
+    color: rgb(255,105,180);
+    font-weight: bolder;
+}
+.diary-date{
+    
+    color: gray;
+
+}
+
